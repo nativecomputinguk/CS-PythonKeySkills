@@ -111,27 +111,6 @@ while hungry:
 + The above loop will end if the user input "N", which changes the hungry variable to "False".  This means, the condition is not true anymore.
 
 
-** Learn It - generate random numbers
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-+ To generate random numbers in python, you need to use the *random* module
-+ There are many functions you can us in the module. See comments in the code for each used here.
-#+BEGIN_SRC 
-import random
-# generate a random integer between 1 and 10 inclusive
-randNo = random.randint(1,10)
-
-# generate a random integer between 1 and 10 but not include 10
-randNo = random.randrange(1,10)
-
-# generate a random integer between 0 and 10 but not include 10
-randNo = random.randrange(10)
-
-# pick a random item from a list
-randLetter = random.choice(["a", "b", "c"])
-#+END_SRC
-
 ** Learn It - check if a whole number is even or odd
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
