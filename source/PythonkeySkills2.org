@@ -109,3 +109,43 @@ while hungry:
 #+END_SRC
 
 + The above loop will end if the user input "N", which changes the hungry variable to "False".  This means, the condition is not true anymore.
+
+
+** Learn It - generate random numbers
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
++ To generate random numbers in python, you need to use the *random* module
++ There are many functions you can us in the module. See comments in the code for each used here.
+#+BEGIN_SRC 
+import random
+# generate a random integer between 1 and 10 inclusive
+randNo = random.randint(1,10)
+
+# generate a random integer between 1 and 10 but not include 10
+randNo = random.randrange(1,10)
+
+# generate a random integer between 0 and 10 but not include 10
+randNo = random.randrange(10)
+
+# pick a random item from a list
+randLetter = random.choice(["a", "b", "c"])
+#+END_SRC
+
+** Learn It - check if a whole number is even or odd
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+- We know from maths that all even numbers can be divisible by 2. In other words, any even number, when divided by 2, the reminder should be 0 - no reminder.
+- In Python, we have learned that the reminder operator is *%*. For example: 24%2 = 0; 25%2=1; 1%2=1 etc
+- So if the reminder is 0 when divided by 2, then the number is even.
+
+#+BEGIN_SRC 
+myNum = int(input("Please give me a whole number: "))
+
+if myNum % 2 == 0:
+   print("The number you game to me is an even number")
+else:
+   print("The number you game to me is an odd number")
+#+END_SRC
