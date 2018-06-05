@@ -1,0 +1,30 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="pages/css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+OPTIONS: f:nil author:nil num:nil creator:nil timestamp:nil  toc:nil
+#+TITLE: Python Key Skills
+#+AUTHOR: X Ellis
+
+
+#+BEGIN_HTML
+<div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/digixc/CS-Pythonkeyskills">Fork me on GitHub</a>
+    </div>
+</div>
+<center>
+</center>
+#+END_HTML
+* [[file:pages/1_Part.html][Part 1 - Data types, arrays comparing values, and random numbers]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:      
+* [[file:pages/2_Part.html][Part 2 - Loops]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:      
+   
+* [[file:pages/3_Part.html][Part 3 - String manipulations]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:      
