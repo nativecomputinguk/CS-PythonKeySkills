@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Python Key Skills</title>
+<title>Python Key Skills - List Comprehension</title>
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -86,8 +86,10 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="pages/css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -137,33 +139,141 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Python Key Skills</h1>
-<div class="github-fork-ribbon-wrapper left">
-    <div class="github-fork-ribbon">
-        <a href="https://github.com/digixc/CS-Pythonkeyskills">Fork me on GitHub</a>
-    </div>
-</div>
-<center>
-</center>
-<div id="outline-container-sec-1" class="outline-2 link-heading">
-<h2 id="sec-1"><a href="pages/1_Part.html">Part 1 - Data types, arrays comparing values, and random numbers</a></h2>
+<h1 class="title">Python Key Skills - List Comprehension</h1>
+
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> List Comprehensions</h2>
 <div class="outline-text-2" id="text-1">
 </div>
+<div id="outline-container-sec-1-1" class="outline-3 learn">
+<h3 id="sec-1-1">Learn It</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<ul class="org-ul">
+<li>There is an easier way of creating lists in Python called <code>List Comprehensions</code>.
+</li>
+<li>Using only one line of code you will create a list of data that meet certain criteria.
+</li>
+</ul>
 </div>
-<div id="outline-container-sec-2" class="outline-2 link-heading">
-<h2 id="sec-2"><a href="pages/2_Part.html">Part 2 - Loops</a></h2>
-<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-sec-1-2" class="outline-3 code">
+<h3 id="sec-1-2">Code It</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>The easiest way of learning about list comprehensions is to write some.
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-python">numbersto10 = [number for number in range(10)]
+</pre>
+</div>
+<ul class="org-ul">
+<li>We start by naming our list.
+</li>
+<li>In the square brackets is the list comprehension.
+</li>
+<li>This one says.
+<ul class="org-ul">
+<li>Fill the list with <code>number</code>
+</li>
+<li>Where <code>number</code> is each element of <code>range(10)</code>
+</li>
+</ul>
+</li>
+<li>Let's have a look at another one.
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-python">foo = 'Hello World!'
+bar = [character for character in foo]
+</pre>
+</div>
+<ul class="org-ul">
+<li>Here we create a list containing all the characters that are in foo.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3 badge">
+<h3 id="sec-1-3">Try It</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Type each line of the following code into a Python intepreter.
+</li>
+<li>Try to understand how each list is created by examining the results
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-python">List1 = [i for i in range(20,10,-1)]
+print(List1)
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-python">List2 = [j**2 for j in range(10)]
+print(List2)
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-python">List3 = [k for k in range(100) if k % 2 == 0]
+print(List3)
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-python">List4 = [l.lower() for l in 'ABCDEFG']
+print(List4)
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-python">List5 = ['_' for m in 'Hello World!']
+print(List5)
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-python">List6 = [n for n in 'The Quick Brown Fox' if n.upper() == n and n != ' ']
+print(List6)
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-python">List7 = [word[0] for word in 'my race should continue on to the island 
+shore to help ease boring eye strain tonight'.split()]
+print(List7)
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-python">List8 = [[row[i] for row in [[1,2,3],[4,5,6],[7,8,9]]]for i in range(3)]
+print(List8)
+</pre>
+</div>
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2 link-heading">
-<h2 id="sec-3"><a href="pages/3_Part.html">Part 3 - String manipulations</a></h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-1-4" class="outline-3 code">
+<h3 id="sec-1-4">Code It - your own list comprehension</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Use list comprehensions to create the following lists.
+<ol class="org-ol">
+<li>[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0]
+</li>
+<li>A list of all consonants in the sentence 'The quick brown fox jumped over the lazy dog'
+</li>
+<li>A list of all square numbers formed by squaring the numbers from 1 to 1000.
+</li>
+</ol>
+</li>
+</ul>
 </div>
-</div>
-<div id="outline-container-sec-4" class="outline-2 link-heading">
-<h2 id="sec-4"><a href="pages/listComp.html">Part 4 - List Comprehension</a></h2>
-<div class="outline-text-2" id="text-4">
 </div>
 </div>
 </div>

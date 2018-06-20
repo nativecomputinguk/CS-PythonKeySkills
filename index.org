@@ -28,3 +28,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:      
+* [[file:pages/listComp.html][Part 4 - List Comprehension]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:      
