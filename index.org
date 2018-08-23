@@ -32,3 +32,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:      
+* [[file:pages/dataValidation.html][Part 5 - Data Validation]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:      
