@@ -223,3 +223,44 @@ names[2] = temp
     print("The random picked name is: ", names[randomIndex])
   
      #+END_SRC
+** Learn It - Find out of a number is a mulitple of other number
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- In maths, we know that if a number A is a multiple of number B, it means A/B will not have a remainder - the remainder is 0.
+- In Python, there is an operator for computing remainder conveniently.  The operator is called =modulo= which is =%=
+- Example 1
+#+BEGIN_SRC 
+A=40
+B=5
+A%B will output 0
+#+END_SRC
+
++ Example 2
+#+BEGIN_SRC 
+A = 12
+B= 9
+A%B will output 3 since 12 only contains one 9, the remainder is 12- 1 x 9=3
+
+#+END_SRC
+
++ Example 3
+
+#+BEGIN_SRC 
+A = 9
+B= 12
+A%B will output 9 since 9 contains zero 12, the remainder is 9 - 0 x 12 = 9
+
+#+END_SRC
+
++ This remainder operator can be used to check if a number is even or odd
+#+BEGIN_SRC 
+
+num = int(input("Give me a number: "))
+
+if num % 2 == 0:
+   print("It's an even number")
+else:
+   print("Not an even number")
+
+#+END_SRC

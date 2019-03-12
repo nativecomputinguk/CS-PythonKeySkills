@@ -150,6 +150,7 @@ for the JavaScript code in this tag.
 <li><a href="#sec-1-4">Learn It - array index and get an item from an array</a></li>
 <li><a href="#sec-1-5">Learn It - swap the positions of two items in an array</a></li>
 <li><a href="#sec-1-6">Learn It - generate random numbers</a></li>
+<li><a href="#sec-1-7">Learn It - Find out of a number is a mulitple of other number</a></li>
 </ul>
 </li>
 </ul>
@@ -373,6 +374,58 @@ print("The random picked name is: ", names[randomIndex])
 </ol>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-sec-1-7" class="outline-3 learn">
+<h3 id="sec-1-7">Learn It - Find out of a number is a mulitple of other number</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>In maths, we know that if a number A is a multiple of number B, it means A/B will not have a remainder - the remainder is 0.
+</li>
+<li>In Python, there is an operator for computing remainder conveniently.  The operator is called <code>modulo</code> which is <code>%</code>
+</li>
+<li>Example 1
+</li>
+</ul>
+<pre class="example">
+A=40
+B=5
+A%B will output 0
+</pre>
+
+<ul class="org-ul">
+<li>Example 2
+</li>
+</ul>
+<pre class="example">
+A = 12
+B= 9
+A%B will output 3 since 12 only contains one 9, the remainder is 12- 1 x 9=3
+</pre>
+
+<ul class="org-ul">
+<li>Example 3
+</li>
+</ul>
+
+<pre class="example">
+A = 9
+B= 12
+A%B will output 9 since 9 contains zero 12, the remainder is 9 - 0 x 12 = 9
+</pre>
+
+<ul class="org-ul">
+<li>This remainder operator can be used to check if a number is even or odd
+</li>
+</ul>
+<pre class="example">
+num = int(input("Give me a number: "))
+
+if num % 2 == 0:
+   print("It's an even number")
+else:
+   print("Not an even number")
+</pre>
 </div>
 </div>
 </div>
